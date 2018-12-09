@@ -58,20 +58,26 @@ output_path = "../Resources/election_results.txt"
 with open (output_path, 'w') as outfile:
     print(Display_line)
     outfile.write(Display_line)
+    outfile.write('\n')
     print(Display_line1)
     outfile.write(Display_line1)
+    outfile.write('\n')
     print(Display_line)
     outfile.write(Display_line)
+    outfile.write('\n')
 
     for each_cand in candidate_dict["name"]:
         idx_position = candidate_dict["name"].index(each_cand)
         print(candidate_dict["display"][idx_position])
         outfile.write(candidate_dict["display"][idx_position])
+        outfile.write('\n')
 
     print(Display_line)
     outfile.write(Display_line)
+    outfile.write('\n')
     print(winner_string)
     outfile.write(winner_string)
+    outfile.write('\n')
     print(Display_line)
     outfile.write(Display_line)
 
